@@ -140,7 +140,7 @@
         <dynamics damping="1.0" friction="1.0"/>
     </joint>
 
-    <link name="camera">
+    <link name="camera_link">
         <inertial>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <mass value="0.1"/>
@@ -169,7 +169,16 @@
     <joint type="fixed" name="camera_joint">
         <origin xyz="0.2 0 0.05" rpy="0 0 0"/>
         <parent link="chassis"/>
-        <child link="camera"/>
+        <child link="camera_link"/>
+    </joint>
+
+    <link name="camera_link_optical">
+    </link>
+
+    <joint name="camera_optical_joint" type="fixed">
+        <origin xyz="0 0 0" rpy="-1.5707 0 -1.5707"/>
+        <parent link="camera_link"/>
+        <child link="camera_link_optical"/>
     </joint>
 
     <link name="hokuyo">
@@ -217,7 +226,7 @@
         <material>Gazebo/Orange</material>
     </gazebo>
 
-    <gazebo reference="camera">
+    <gazebo reference="camera_link">
         <material>Gazebo/Red</material>
     </gazebo>
 
