@@ -1,7 +1,7 @@
 # map_my_world
 
 Udacity's SW Engineer Course - Forth Project: Map My World!
-The project is about Simultaneous Localization and Mapping (SLAM) using [RTAB-Map](http://wiki.ros.org/rtabmap_ros) package. It consist of three packages: `my_robot` (creating the robot, world and launching rtabmap package) and `teleop_twist_keyboard` (for controlling the robot using keyboard).
+The project is about Simultaneous Localization and Mapping (SLAM) using [RTAB-Map](http://wiki.ros.org/rtabmap_ros) package. It consist of two packages: `my_robot` (creating the robot, world and launching rtabmap package) and `teleop_twist_keyboard` (for controlling the robot using keyboard).
 
 To change the parameters of the RTAB-Map package check the launch file in this directory: `src/my_robot/launch/mapping.launch`.
 
