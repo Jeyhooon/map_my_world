@@ -1,6 +1,7 @@
 # map_my_world
 
-Udacity's SW Engineer Course - Forth Project: Map My World!
+Udacity's Robotic SW Engineer Course - Forth Project: Map My World!
+
 The project is about Simultaneous Localization and Mapping (SLAM) using [RTAB-Map](http://wiki.ros.org/rtabmap_ros) package. It consist of two packages: `my_robot` (creating the robot, world and launching rtabmap package) and `teleop_twist_keyboard` (for controlling the robot using keyboard).
 
 ![images/map_my_world.png](images/map_my_world.png)
@@ -66,14 +67,6 @@ The robot consist of differential drive (to drive the two wheels), a lidar (hoku
 | ![images/robot.png](images/robot.png) | ![images/rviz.png](images/rviz.png) |
 
 ## Getting Started
-
-### Pre-requisites
-
-To compile map creator we need to install the following libraries:
-
-```
-sudo apt-get install libignition-math2-dev protobuf-compiler
-```
 
 - Clone this repo to your local drive:
   `git clone https://github.com/Jeyhooon/map_my_world.git`
